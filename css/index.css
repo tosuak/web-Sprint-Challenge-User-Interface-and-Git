@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 * {
     box-sizing: border-box;
+    border: 1px solid grey;
 }
 
 html, body {
@@ -54,7 +55,7 @@ p {
     width: 100%;
     padding: 2%;
 }
-.logo{
+#index .logo{
     background-image: url(/img/lambda-black.png);
     display: flex;
     align-items: center;
@@ -67,17 +68,17 @@ p {
     justify-content: space-between;
     align-items: center;
 }
-.links{
+#index .links{
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.links a{
+#index .links a{
     text-decoration: none;
     color: black;
 }
-.bg-img{
+#index .bg-img{
     background-image: url(/img/jumbo.jpg);
     display: flex;
     justify-content: center;
@@ -87,6 +88,30 @@ p {
     padding: 10% 0%;
 }
 
+#about{
+    width: 100%;
+    padding: 1%;
+}
+#about .logo{
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    width: 30%;
+    padding: 5% 0% 3%;
+
+}
+#about nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#about .links{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
