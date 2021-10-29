@@ -51,11 +51,11 @@ p {
     width: 800px;
     margin: 0 auto;
 }
-#index{
+header{
     width: 100%;
     padding: 2%;
 }
-#index .logo{
+.logo{
     background-image: url(/img/lambda-black.png);
     display: flex;
     align-items: center;
@@ -63,18 +63,18 @@ p {
     width: 30%;
     padding: 5% 0% 3%;
 }
-#index nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#index .links{
+.links{
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-#index .links a{
+.links a{
     text-decoration: none;
     color: black;
 }
@@ -87,31 +87,32 @@ p {
     margin-top: 3%;
     padding: 10% 0%;
 }
-
-#about{
-    width: 100%;
-    padding: 1%;
-}
-#about .logo{
+#about .bg-img{
+    background-image: url(/img/jumbo-about.png);
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
     background-repeat: no-repeat;
-    width: 30%;
-    padding: 5% 0% 3%;
+    margin-top: 3%;
+    padding: 10% 0%;
+}
 
+.top-about{
+    margin:0% 2%;
+    padding: 0% 2%;
+    font-size: .9rem;
+    border-bottom: 1px dashed black;
 }
-#about nav{
+.middle-about{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
 }
-#about .links{
-    width: 100%;
+.strategy-img{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+}
 
-}
 .top-content {
     display: flex;
     flex-wrap: wrap;
