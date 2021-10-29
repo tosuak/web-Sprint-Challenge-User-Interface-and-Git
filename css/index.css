@@ -62,6 +62,10 @@ header{
     background-repeat: no-repeat;
     width: 30%;
     padding: 5% 0% 3%;
+    transition: 1.5s;
+}
+.logo:hover{
+    touch-action:auto;
 }
 nav {
     display: flex;
@@ -77,6 +81,9 @@ nav {
 .links a{
     text-decoration: none;
     color: black;
+}
+.links a:hover{
+    color: darkgrey;
 }
 #index .bg-img{
     background-image: url(/img/jumbo.jpg);
@@ -135,6 +142,10 @@ nav {
     padding: 2% 5%;
     margin: 5% 0%;
 }
+.strategy-txt button:hover{
+    background-color: black;
+    color: white;
+}
 .how-work{
     display: flex;
     justify-content: space-between;
@@ -162,6 +173,10 @@ nav {
     border-radius: 10px;
     padding: 2% 5%;
     margin: 5% 0%;
+}
+.how-work-txt button:hover{
+    background-color: black;
+    color: white;
 }
 .place-work{
     display: flex;
@@ -192,6 +207,10 @@ nav {
     padding: 2% 5%;
     margin: 5% 0%;
 }
+.place-work-txt button:hover{
+    background-color: black;
+    color: white;
+}
 .meeting{
     display: flex;
     justify-content: space-between;
@@ -219,6 +238,17 @@ nav {
     border-radius: 10px;
     padding: 2% 5%;
     margin: 5% 0%;
+}
+.meeting-txt button:hover{
+    background-color: black;
+    color: white;
+}
+
+.bottom-about{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0% 2% 5% 1%;
+    padding: 1%;
 }
 .top-content {
     display: flex;
@@ -315,11 +345,15 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
+    padding: 2%;
     font-size: 14px;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover{
+    color: darkgrey;
 }
