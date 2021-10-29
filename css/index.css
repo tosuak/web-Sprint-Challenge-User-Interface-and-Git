@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 * {
     box-sizing: border-box;
-    border: 1px solid grey;
+
 }
 
 html, body {
@@ -99,20 +99,127 @@ nav {
 
 .top-about{
     margin:0% 2%;
-    padding: 0% 2%;
+    padding: 0% 2% 2%;
     font-size: .9rem;
     border-bottom: 1px dashed black;
 }
 .middle-about{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     flex-flow: row wrap;
+    margin-bottom: 5%;
+}
+.strategy{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+    width: 45%;
+    margin: 5% 2%;
+    border-bottom: 1px dashed black;
 }
 .strategy-img{
     display: flex;
     justify-content: center;
+    margin-bottom: 3%;
 }
+.strategy-txt{
+    text-align: left;
+}
+.strategy-txt button{
+    background-color: white;
+    color: black;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 2% 5%;
+    margin: 5% 0%;
+}
+.how-work{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    width: 45%;
+    margin: 5% 3%;
+    border-bottom: 1px dashed black;
 
+}
+.how-work-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+
+}
+.how-work-txt{
+    text-align: left;
+
+}
+.how-work-txt button{
+    background-color: white;
+    color: black;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 2% 5%;
+    margin: 5% 0%;
+}
+.place-work{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    width: 45%;
+    margin-top: 5%;
+    margin-left: 2%;
+    border-bottom: 1px dashed black;
+
+}
+.place-work-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+
+}
+.place-work-txt{
+    text-align: left;
+
+}
+.place-work-txt button{
+    background-color: white;
+    color: black;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 2% 5%;
+    margin: 5% 0%;
+}
+.meeting{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    width: 45%;
+    margin-top: 5%;
+    margin-right: 3%;
+    border-bottom: 1px dashed black;
+
+}
+.meeting-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.meeting-txt{
+    text-align: left;
+
+}
+.meeting-txt button{
+    background-color: white;
+    color: black;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 2% 5%;
+    margin: 5% 0%;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
