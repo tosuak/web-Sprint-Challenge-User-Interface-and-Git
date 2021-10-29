@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -28,27 +27,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 * {
     box-sizing: border-box;
+
 }
 
 html, body {
@@ -70,7 +51,205 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+header{
+    width: 100%;
+    padding: 2%;
+}
+.logo{
+    background-image: url(/img/lambda-black.png);
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    width: 30%;
+    padding: 5% 0% 3%;
+    transition: 1.5s;
+}
+.logo:hover{
+    touch-action:auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+}
+.links a:hover{
+    color: darkgrey;
+}
+#index .bg-img{
+    background-image: url(/img/jumbo.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    margin-top: 3%;
+    padding: 10% 0%;
+}
+#about .bg-img{
+    background-image: url(/img/jumbo-about.png);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    margin-top: 3%;
+    padding: 10% 0%;
+}
 
+.top-about{
+    margin:0% 2%;
+    padding: 0% 2% 2%;
+    font-size: .9rem;
+    border-bottom: 1px dashed black;
+}
+.middle-about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 5%;
+}
+.strategy{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+    width: 45%;
+    margin: 5% 2%;
+    border-bottom: 1px dashed black;
+}
+.strategy-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.strategy-txt{
+    text-align: left;
+}
+.strategy-txt button{
+    background-color: white;
+    color: black;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 2% 5%;
+    margin: 5% 0%;
+}
+.strategy-txt button:hover{
+    background-color: black;
+    color: white;
+}
+.how-work{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    width: 45%;
+    margin: 5% 3%;
+    border-bottom: 1px dashed black;
+
+}
+.how-work-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+
+}
+.how-work-txt{
+    text-align: left;
+
+}
+.how-work-txt button{
+    background-color: white;
+    color: black;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 2% 5%;
+    margin: 5% 0%;
+}
+.how-work-txt button:hover{
+    background-color: black;
+    color: white;
+}
+.place-work{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    width: 45%;
+    margin-top: 5%;
+    margin-left: 2%;
+    border-bottom: 1px dashed black;
+
+}
+.place-work-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+
+}
+.place-work-txt{
+    text-align: left;
+
+}
+.place-work-txt button{
+    background-color: white;
+    color: black;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 2% 5%;
+    margin: 5% 0%;
+}
+.place-work-txt button:hover{
+    background-color: black;
+    color: white;
+}
+.meeting{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    width: 45%;
+    margin-top: 5%;
+    margin-right: 3%;
+    border-bottom: 1px dashed black;
+
+}
+.meeting-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.meeting-txt{
+    text-align: left;
+
+}
+.meeting-txt button{
+    background-color: white;
+    color: black;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 2% 5%;
+    margin: 5% 0%;
+}
+.meeting-txt button:hover{
+    background-color: black;
+    color: white;
+}
+
+.bottom-about{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0% 2% 5% 1%;
+    padding: 1%;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -101,16 +280,46 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.box1{
+    background-color: teal;
+}
+.box2{
+    background-color: gold;
+}
+.box3{
+    background-color: cadetblue;
+}
+.box4{
+    background-color: coral;
+}
+.box5{
+    background-color: crimson;
+}
+.box6{
+    background-color: forestgreen;
+}
+.box7{
+    background-color: darkorchid;
+}
+.box8{
+    background-color: hotpink;
+}
+.box9{
+    background-color: indigo;
+}
+.box10{
+    background-color: dodgerblue;
+}
+
 
 .bottom-content {
     display: flex;
@@ -136,11 +345,15 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
+    padding: 2%;
     font-size: 14px;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover{
+    color: darkgrey;
 }
